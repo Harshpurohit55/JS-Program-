@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html body {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        background-color: cyan;
+
+    }
+
+    nav li {
+        list-style: none;
+        margin: 0 23px;
+
+    }
+</style>
+
+<body>
+
+    <!-- 1 Create Nav bar and change color of first element  -->
+    <nav>
+        <li> Home</li>
+        <li> About</li>
+        <li> Blog</li>
+        <li> Contact</li>
+
+    </nav>
+
+    <!-- 2 Create  a table without tbody now use "View page source " button to check wheather it has a tbody or not 
+    Answer is==> in console Yes/ In page source NO  -->
+    <table>
+        <td>
+            Hello
+        </td>
+        <tr>Hello 1</tr>
+        <tr>Hello 2</tr>
+        <tr>Hello 3</tr>
+        <tr>Hello 4</tr>
+    </table>
+
+    <!-- 3 Create an element with 3 children now change color of first and last element to green -->
+    <script>
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red"
+        // 3rd answer
+
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green"
+
+        document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green"
+
+        Array.from(document.getElementsByTagName("li")).forEach((element) => {
+            element.style.background = "red";
+        })
+
+    </script>
+</body>
+
+</html>

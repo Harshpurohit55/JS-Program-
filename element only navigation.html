@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        background: grey;
+        margin: 0;
+        padding: 15px 0;
+        color: white;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About me </li>
+            <li>Hire me</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p>Hey I am a Good Boy</p>
+    </div>
+    <script>
+        const changeBodyRed = () => {
+            document.body.firstElementChild.style.color = "red";
+        }
+
+        changeBodyRed()
+        let b = document.body
+        console.log("first child of b is : ", b.firstChild)
+        console.log("first Element child of b is : ", b.firstElementChild)
+    </script>
+</body>
+
+</html>
